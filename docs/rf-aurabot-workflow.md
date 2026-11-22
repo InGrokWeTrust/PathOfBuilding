@@ -60,3 +60,16 @@ Build on PoB's existing calculations, not hand-written approximations. Design an
 ## Next checkpoint
 
 Obtain a fresh PoB build export from the user's actual character, inspect its XML/build content (without secrets), and produce a baseline report. Only then decide whether the desired improvement requires new PoB source code or can be delivered as a separate report or tooling.
+
+## Import diagnostic: first user-provided export (2026-11-23)
+
+A supplied PoB sharing code was decoded locally but **not committed** to GitHub. XML inspection showed:
+
+- `Build`: Scion, level 1, no ascendancy; stored calculated life 60, mana 50, no life regeneration, no DoT damage.
+- `Skills`: one empty `SkillSet`, no gems.
+- `Items`: no item payloads, equipment slots all unassigned.
+- `Tree`: tree version `3_30`, only the Scion start node (`58833`).
+
+**Conclusion:** The code is a blank PoB template, not an import of the in-game RF character. No RF or aurabot baseline can be calculated yet. The XML also contained an account-derived hash in import metadata; neither the raw code nor that identifier belongs in this public repository.
+
+**Recovery:** In PoB's **Import/Export Build → Import From Your Account**, select **Authorize with Path of Exile** as needed, **Fetch Characters**, choose the correct realm/league/character, then import both **Passive Tree and Jewels** and **Items and Skills**. Confirm the build shows the actual character level, passive nodes, gear and RF/Vitality/Purity of Fire gems before selecting **Build Sharing → Generate → Copy** and providing the new export for private review.
