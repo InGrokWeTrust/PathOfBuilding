@@ -93,3 +93,29 @@ For reference, the *target-restricted graph paths* directly from currently alloc
 - If quest points or Uber Lab are incomplete, defer optional target passives rather than committing more temporary allocations.
 
 Source for mapped node stats and graph edges: `src/TreeData/3_30/tree.lua` in this same fork. **No changes to Path of Building's calculation engine.**
+
+## Progress update — Nomadic Teachings route completed (reported 2026-11-23)
+
+The user reports **all four planned passives allocated**. This is a user-reported progression update; no fresh character export was imported to independently verify it.
+
+| Node ID | Node name | Status |
+|---:|---|---|
+| 6446 | Strength | Completed |
+| 27166 | Fire Resistance | Completed |
+| 48929 | Maximum Fire Resistance | Completed |
+| 25989 | **Nomadic Teachings** | Completed |
+
+These four IDs are all included in the exact level-75 target tree. **They add zero new refund candidates.**
+
+Assuming there have been no other changes, the current-to-target comparison becomes **24 shared node IDs** (including Scion start), **8 original non-target nodes**, and **84 target IDs remaining**. These are projected counts pending a fresh export, not the prior verified level-27 snapshot.
+
+### Next three planned points — Barbarism
+
+1. `55649`: Strength (branches from `6446`)
+2. `44429`: Life and Elemental Resistances
+3. `53118`: **Barbarism** (max life and +1% maximum fire resistance)
+
+Then continue through `30380` Life and Elemental Resistances, `59928` Strength, `2219` Life Regeneration, `48822` Life Regeneration, and `30302` **Hearty**.
+
+Keep the existing RF-specific regeneration passives until the actual aurabot conversion. The exact 8-refund baseline remains unchanged provided no other off-target nodes are added.
+
