@@ -1,4 +1,4 @@
-# RF Scion → level-75 Luminary Aurabot: low-refund passive-tree route
+> **UPDATED: Verified comparison is now available.** See [exact level-27 → level-75 node overlap, 8 refunds and 12-point sustain-first path](rf-aurabot-verified-level75-tree-diff.md). This original planning document is historical and its approximate route counts should not override the verified target-specific comparison.\n\n# RF Scion → level-75 Luminary Aurabot: low-refund passive-tree route
 
 **Status: PRELIMINARY route, not a calculated minimum-respec path.** Authored 2026-11-23 against Allie's 3.30 guide (updated 2026-11-22) and the user's anonymized level-26 PoB baseline. The target level-75 PoB passive-node IDs and the exact current-node IDs have **not** both been captured for set-difference/path analysis, so **no exact refund count or precise connected node-by-node sequence is asserted**.
 
